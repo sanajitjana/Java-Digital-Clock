@@ -12,9 +12,7 @@ import javax.swing.JLabel;
 @SuppressWarnings("serial")
 public class Clock extends JFrame{
 	
-	private JLabel heading;
-	private JLabel clockLabel;
-	
+	private JLabel clockLabel;	
 	private Font clockFont=new Font("",Font.BOLD,35);
 	
 	public Clock() {
@@ -30,14 +28,11 @@ public class Clock extends JFrame{
 	
 	public void clockGUI() {
 		
-		heading=new JLabel("My Digital Clock");
 		clockLabel=new JLabel ("Time will be display here");
 		
-		heading.setFont(clockFont);
 		clockLabel.setFont(clockFont);
 		
 		this.setLayout(new GridLayout(1,1));
-//		this.add(heading);
 		this.add(clockLabel);
 		
 	}
