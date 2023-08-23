@@ -18,8 +18,7 @@ public class Clock extends JFrame{
 	public Clock() {
 
 		super.setTitle("Java Digital Clock");
-		super.setSize(350,150);
-		super.setLocation(550,250);
+		super.setBounds(850, 450,300,150);
 		
 		this.clockGUI();
 		this.clockCode();
